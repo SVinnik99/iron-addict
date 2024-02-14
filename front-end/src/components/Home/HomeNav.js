@@ -1,14 +1,10 @@
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button, Container, Form, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import "./HomeNav.css" 
 
 function HomeNav() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg"  >
       <Container fluid>
         <Navbar.Brand href="#">Iron Addict</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -39,7 +35,7 @@ function HomeNav() {
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success">Search</Button>
+            <Button variant="dark">Search</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
