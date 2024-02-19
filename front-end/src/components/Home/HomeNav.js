@@ -2,11 +2,13 @@ import { Button, Container, Form, Nav, Navbar, NavDropdown } from 'react-bootstr
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "./HomeNav.css" 
 
+
+
 function HomeNav() {
   return (
-    <Navbar expand="lg"  >
+    <Navbar  data-bs-theme="dark" expand="lg"  >
       <Container fluid>
-        <Navbar.Brand href="#">Iron Addict</Navbar.Brand>
+        <Navbar.Brand href="#" >Iron Addict</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -14,9 +16,9 @@ function HomeNav() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">About</Nav.Link>
-            <NavDropdown title="Tools" id="navbarScrollingDropdown">
+            <Nav.Link  href="#action1">Home</Nav.Link>
+            <Nav.Link  href="#action2">About</Nav.Link>
+            <NavDropdown  title="Tools" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Calculators</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
                 Programs
