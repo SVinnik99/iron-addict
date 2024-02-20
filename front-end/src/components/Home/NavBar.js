@@ -1,14 +1,15 @@
 import { Button, Container, Form, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import "./HomeNav.css" 
+import "./NavBar.css" 
 
 
 
-function HomeNav() {
+function NavBar() {
   return (
     <Navbar  data-bs-theme="dark" expand="lg"  >
       <Container fluid>
-        <Navbar.Brand href="#" >Iron Addict</Navbar.Brand>
+        <Navbar.Brand  >Iron Addict</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -16,11 +17,11 @@ function HomeNav() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link  href="#action1">Home</Nav.Link>
-            <Nav.Link  href="#action2">About</Nav.Link>
+            <Nav.Link  href="/">Home</Nav.Link>
+            <Nav.Link  href="/about">About</Nav.Link>
             <NavDropdown  title="Tools" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Calculators</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
+              <NavDropdown.Item href="/calculators">Calculators</NavDropdown.Item>
+              <NavDropdown.Item href="/programs">
                 Programs
               </NavDropdown.Item>
               <NavDropdown.Divider />
@@ -45,4 +46,4 @@ function HomeNav() {
   );
 }
 
-export default HomeNav;
+export default NavBar;

@@ -1,11 +1,10 @@
 import React from "react";
-import HomeNav from "./HomeNav";
-import "./Index.css"
+import "./Index.css";
 
 function Home() {
   return (
     <>
-      <HomeNav />
+      <p>This is the Home page</p>
     </>
   );
 }
