@@ -1,10 +1,12 @@
 import React from "react";
 import "./Index.css";
+import logo from "../../images/lifting_logo.png";
 
 function Home() {
   return (
     <>
-      <p>This is the Home page</p>
+      <img src={logo} />
+      <h1>A website dedicated to iron-addicts</h1>
     </>
   );
 }
