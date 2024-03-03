@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./index.css";
 
 function Calculators() {
   const initialFormData = {
@@ -33,31 +33,33 @@ function Calculators() {
 
   return (
     <>
-      <h4>Estimated One Rep Max Calculator</h4>
-      <form onSubmit={handleSubmit}>
-        <label>Weight Used</label>
-        <input
-          id="weight"
-          type="number"
-          name="weight"
-          value={formData.weight}
-          onChange={handleChange}
-        />
-        <label>Number of Reps</label>
-        <input
-          id="reps"
-          type="number"
-          name="reps"
-          value={formData.reps}
-          onChange={handleChange}
-        />
-        <label>RPE</label>
-        <input id="rpe" type="number" name="rpe" />
+      <div className="form-box">
+        <h4 className="form-title">Estimated One Rep Max Calculator</h4>
+        <form onSubmit={handleSubmit}>
+          <label>Weight Used</label>
+          <input
+            id="weight"
+            type="number"
+            name="weight"
+            value={formData.weight}
+            onChange={handleChange}
+          />
+          <label>Number of Reps</label>
+          <input
+            id="reps"
+            type="number"
+            name="reps"
+            value={formData.reps}
+            onChange={handleChange}
+          />
+          <label>RPE</label>
+          <input id="rpe" type="number" name="rpe" />
 
-        <h4>Estimated Max {result}</h4>
+          <h4>Estimated Max {result}</h4>
 
-        <button type="submit">Calculate</button>
-      </form>
+          <button type="submit">Calculate</button>
+        </form>
+      </div>
     </>
   );
 }
